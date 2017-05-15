@@ -33,7 +33,7 @@ function setUpSquares() {
 		//Click event for the squares
 		squares[i].addEventListener("click", function() {
 			//Grab the color of the square
-			var clickedColor = this.style.background;
+			var clickedColor = this.style["background-color"];
 			//Compare color to picked color
 			if(clickedColor === pickedColor) {
 				changeColors(clickedColor);
